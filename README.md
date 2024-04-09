@@ -25,3 +25,6 @@ To utilize the provided example code snippets, follow these steps:
 6. Save the changes.
 
 Now you can use the provided snippets by typing their trigger words in a Python file and pressing `Tab` to expand them.
+
+## Sources
+- [Visual Studio Code Documentation: User-Defined Snippets](https://code.visualstudio.com/docs/editor/userdefinedsnippets)
