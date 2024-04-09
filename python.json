@@ -4,8 +4,9 @@
 	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
 	// same ids are connected.
 	// Example:
-	// <Title of Snippet>: {
-	// 	"prefix": "<prefeix to type>", //This is what the user types in order to trigger the snippet
+	// "<Title of Snippet>": {
+	// 	"prefix": "<prefeix to type>", 
+	// This is what the user types in order to trigger the snippet
 	// 	"body": [
 	//		"<Code goes here>"
 	// 		"console.log('$1');",
@@ -14,14 +15,21 @@
 	// 	"description": "Log output to console" // description of the snippet
 	// }
 
+	/**
+	* Basic Tab Stops Example 
+	* starts from $1 and increases sequentially
+	*/
 	"For loop": {
 		"prefix": "flx",
 		"body": [
-			"for $1 in $2:"
+			"for `$1` in $2:"
 		],
 		"description": "simple shortcut: for loops"
 	},
 
+	/**
+	* Placeholders and Predefined Variables Example 
+	*/
 	"print": {
 		"prefix": "clx",
 		"body": [
@@ -31,6 +39,10 @@
 		"description": "prints the current date and time"
 	},
 
+	/**
+	* Mirror Example
+	* synchronization through using the same Tab Stop value 
+	*/
 	"If, elif and else": {
 		"prefix": "iee",
 		"body": [
@@ -39,11 +51,14 @@
 			"elif $3:",
 			"\tprint($2)",
 			"else:",
-			"\tprint($5)"
+			"\tprint($4)"
 		],
 		"description": "simple shortcut: if, elif, and else"
 	},
 
+	/**
+	* 
+	*/
 	"Read file":{
 		"prefix": "rw",
 		"body": [
@@ -51,7 +66,11 @@
 		],
 		"description": "read and write files"
 	},
-	
+
+	/**
+	* Choice Tabstops Example 
+	* List multiple choices for a placeholder 
+	*/
 	"Convert different number types": {
 		"prefix": "cn",
 		"body": [
