@@ -26,7 +26,7 @@ To utilize the provided example code snippets, follow these steps:
 
 Now you can use the provided snippets by typing their trigger words in a Python file and pressing `Tab` to expand them.
 
-## Some Helpful Tools to Create Snippets
+## A Helpful Tool to Create Snippets
 - [Web Snippet Generator Created by Pawel Grzybek](https://snippet-generator.app/?description=&tabtrigger=&snippet=&mode=vscode)
 
 ## Sources
