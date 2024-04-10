@@ -5,6 +5,7 @@ This repository contains materials for the ECS 161 VSCode Snippets Presentation.
 
 ## Contents
 - `PythonSnippetsDemo.code-snippets`: This file contains example code snippets used during the presentation to demonstrate the usage of VSCode snippets in Python.
+- `LatexFigureSnippets.code-snippets`: This file contains 2 snippets used to display figures and subfigures for latex environment that we created on VSCode.
 
 ## Description
 This presentation introduces the concept of Visual Studio Code (VSCode) snippets and their utility in enhancing productivity during software development. The presentation covers the following topics:
