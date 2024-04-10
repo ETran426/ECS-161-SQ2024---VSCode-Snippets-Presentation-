@@ -28,7 +28,6 @@
 		],
 		"description": "Insert a LaTeX figure environment"
 	},
-	
 
 	"LaTeX Subfigures": {
 		"scope": "latex",
