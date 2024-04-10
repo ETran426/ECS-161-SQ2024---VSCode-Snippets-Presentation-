@@ -29,6 +29,7 @@
 
 	/**
 	* Placeholders and Predefined Variables Example 
+	* Snippet displays current date and time as default values
 	*/
 	"print": {
 		"prefix": "clx",
@@ -57,7 +58,7 @@
 	},
 
 	/**
-	*
+	* Another Example of Placeholders and Predefined Variable
 	*/
 	"Read file":{
 		"prefix": "rw",
