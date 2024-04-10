@@ -78,6 +78,17 @@
 			"${1:value} = ${2|str(), int(), float()|}"
 		],
 		"description": "convert a number to a str, int, or float"
+	},
+
+	/*
+	* Transformation Example 
+	*/
+	"Uppercase Variable ": {
+		"prefix": "var",
+		"body": [
+		  "${1/(.*)/${1:/upcase}/} = $2;"
+		],
+		"description": "Inserts a variable with an uppercase name"
 	}
 	
 }
