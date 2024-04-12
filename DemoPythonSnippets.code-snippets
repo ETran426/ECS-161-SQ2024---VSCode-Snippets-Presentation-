@@ -13,6 +13,18 @@
 	// }
 
 	/**
+	* Choice Tabstops and Placeholder Example for Simple Logging Function
+	* Incase you for get the possible options from logging
+	*/
+	"Python Logging": {
+		"prefix": "log",
+		"body": [
+			"logging.${1|debug,info,warning,error,critical|}('${2:foo}')"
+		],
+		"description": "Python Logging Snippet"
+	},
+
+	/**
 	* Basic Tab Stop Example
 	*/
 	"print": {
@@ -21,7 +33,7 @@
             "print($1)"
         ],
         "description": "creates a print function"
-    },
+	 },
 
 	/**
 	* Tab Stops and Placeholder Example 
@@ -34,7 +46,7 @@
             "\t${3:#Code here}"
         ],
         "description": "Creates a for loop"
-    },
+	},
 
 	/**
 	* Placeholders Example 
@@ -45,8 +57,8 @@
             "def ${1:function_name}(${2:parameters}):",
             "\t${3:#Code here}"
         ],
-        "description": "creates a function defintion"
-    },
+        "description": "creates a function definition"
+	},
 
 	/**
 	* Placeholders and Predefined Variables Example 
@@ -70,7 +82,7 @@
             "${1:variable} = [$2]"
         ],
         "description": "creates a array"
-    },
+	},
 
 	/**
 	* Multiple Choice Example 
@@ -83,7 +95,7 @@
             "\t$3\n$4",
         ],
         "description": "simple shortcut: if or elif"
-    },
+	},
 
 	/**
 	* Another Tab Stops Example
@@ -150,18 +162,6 @@
         ],
         "description": "bunch of imports to start a file"
     },
-	
-	/**
-	* Choice Tabstops and Placeholder Example for Simple Logging Function
-	* Incase you for get the possible options from logging
-	*/
-	"Python Logging": {
-		"prefix": "log",
-		"body": [
-			"logging.${1|debug,info,warning,error,critical|}('${2:foo}')"
-		],
-		"description": "Python Logging Snippet"
-	},
 	
 	/**
 	* Transformation Example 
