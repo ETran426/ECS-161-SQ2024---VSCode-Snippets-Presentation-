@@ -14,7 +14,7 @@
 
 	/**
 	* Choice Tabstops and Placeholder Example for Simple Logging Function
-	* Incase you for get the possible options from logging
+	* Incase you forget the possible options from logging
 	*/
 	"Python Logging": {
 		"prefix": "log",
