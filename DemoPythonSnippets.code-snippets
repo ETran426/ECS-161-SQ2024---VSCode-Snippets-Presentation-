@@ -1,4 +1,4 @@
-{
+ {
 	// Place your snippets for python here. Each snippet is defined under a snippet name and has a prefix, body and 
 	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
 	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
@@ -6,33 +6,55 @@
 	// Example:
 	// "<Title of Snippet>": {
 	// 	"prefix": "<prefeix to type>", 
-	// This is what the user types in order to trigger the snippet
 	// 	"body": [
 	//		"<Code goes here>"
-	// 		"console.log('$1');",
-	// 		"$2"
+	// 		"console.log('$1');"
 	// 	],
 	// 	"description": "Log output to console" // description of the snippet
 	// }
 
 	/**
-	* Basic Tab Stops Example 
+	* Basic Tab Stop Example
+	*/
+	"print": {
+        "prefix": "pr",
+        "body": [
+            "print($1)"
+        ],
+        "description": "creates a print function"
+    },
+
+	/**
+	* Tab Stops and Placeholder Example 
 	* starts from $1 and increases sequentially
 	*/
 	"For loop": {
-		"prefix": "flx",
-		"body": [
-			"for `$1` in $2:"
-		],
-		"description": "simple shortcut: for loops"
-	},
+        "prefix": "fo",
+        "body": [
+            "for $1 in $2:",
+            "\t${3:#Code here}"
+        ],
+        "description": "Creates a for loop"
+    },
+
+	/**
+	* Placeholders Example 
+	*/
+	"function": {
+        "prefix": "func",
+        "body": [
+            "def ${1:function_name}(${2:parameters}):",
+            "\t${3:#Code here}"
+        ],
+        "description": "creates a function defintion"
+    },
 
 	/**
 	* Placeholders and Predefined Variables Example 
 	* Snippet displays current date and time as default values
 	*/
-	"print": {
-		"prefix": "clx",
+	"time": {
+		"prefix": "date",
 		"body": [
 			"print('${1:$CURRENT_MONTH_NAME/$CURRENT_DATE/$CURRENT_YEAR}')",
 			"print('${2:$CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND}')"
@@ -41,46 +63,108 @@
 	},
 
 	/**
-	* Mirror Example
-	* synchronization through using the same Tab Stop value 
+	* Second Placeholder Example 
 	*/
-	"If, elif and else": {
-		"prefix": "iee",
-		"body": [
-			"if $1:",
-			"\tprint($2)",
-			"elif $3:",
-			"\tprint($2)",
-			"else:",
-			"\tprint($4)"
-		],
-		"description": "simple shortcut: if, elif, and else"
-	},
+	"array": {
+        "prefix": "arr",
+        "body": [
+            "${1:variable} = [$2]"
+        ],
+        "description": "creates a array"
+    },
 
 	/**
-	* Another Example of Placeholders and Predefined Variable
+	* Multiple Choice Example 
+	* synchronization through using the same Tab Stop value 
 	*/
-	"Read file":{
-		"prefix": "rw",
-		"body": [
-			"${1:file1} = open('$TM_DIRECTORY/$2')",
-		],
-		"description": "read and write files"
-	},
+	"If": {
+        "prefix": "iff",
+        "body": [
+            "${1|if,elif|} $2:",
+            "\t$3\n$4",
+        ],
+        "description": "simple shortcut: if or elif"
+    },
+
+	/**
+	* Another Tab Stops Example
+	*/
+	"try-except": {
+        "prefix": "tr",
+        "body": [
+            "try:",
+            "\tprint($1)",
+            "except:",
+            "\tprint($2)",
+        ],
+        "description": "try and exept shortcut"
+    },
+
+	/**
+	* Simple Tab Stop Example
+	*/
+	"Comment Block":{
+        "prefix": "comm",
+        "body": [
+            "$BLOCK_COMMENT_START",
+            "$1",
+            "$BLOCK_COMMENT_END"
+        ],
+        "description": "read and write files"
+    },
+
+	/**
+	* Predefined Variable Example
+	*/
+	"file directory":{
+        "prefix": "directory",
+        "body": [
+            "'$TM_DIRECTORY'",
+        ],
+        "description": "grabs the current file directory"
+    },
 
 	/**
 	* Choice Tabstops Example 
 	* List multiple choices for a placeholder 
 	*/
-	"Convert different number types": {
-		"prefix": "cn",
-		"body": [
-			"${1:value} = ${2|str(), int(), float()|}"
-		],
-		"description": "convert a number to a str, int, or float"
-	},
+	"array methods": {
+        "prefix": "arrm",
+        "body": [
+            "${1:array}.${2|clear,copy,count,reverse,sort,append,count,extend,index,pop,remove|}($3)\n$4",
+        ],
+        "description": "list of array methods"
+    },
 
-	/*
+	/**
+	* Generic Snippet Example 
+	*/
+	"Starter file": {
+        "prefix": "import",
+        "body": [
+            "import random",
+            "import sys",
+            "import time",
+            "import numpy as np",
+            "import pygame",
+            "import math\n",
+        ],
+        "description": "bunch of imports to start a file"
+    },
+	
+	/**
+	* Choice Tabstops and Placeholder Example for Simple Logging Function
+	* Incase you for get the possible options from logging
+	*/
+	"Python Logging": {
+		"prefix": "log",
+		"body": [
+			"logging.${1|debug,info,warning,error,critical|}('${2:foo}')"
+		],
+		"description": "Python Logging Snippet"
+	},
+	
+	/**
 	* Transformation Example 
 	*/
 	"Uppercase Variable ": {
