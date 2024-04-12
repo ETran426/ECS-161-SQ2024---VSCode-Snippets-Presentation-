@@ -16,7 +16,7 @@ This presentation introduces the concept of Visual Studio Code (VSCode) snippets
 
 ## Usage
 To utilize the provided example code snippets, follow these steps:
-1. The easiest way is to copy the `PythonSnippetsDemo.code-snippets` content to your local machine. Or you can clone this repository to your local machine or download the `PythonSnippetsDemo.code-snippets` file.
+1. The easiest way is to copy using `Ctrl+C` on the `PythonSnippetsDemo.code-snippets` content to your local machine. Or you can clone this repository to your local machine or download the `PythonSnippetsDemo.code-snippets` file.
 2. Open Visual Studio Code.
 3. Navigate to the User Snippets section by either:
    - Selecting `File` > `Preferences` > `User Snippets` from the menu.
