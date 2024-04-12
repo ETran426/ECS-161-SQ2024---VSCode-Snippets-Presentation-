@@ -8,9 +8,8 @@
 	// 	"prefix": "<prefeix to type>", 
 	// 	"body": [
 	//		"<Code goes here>"
-	// 		"console.log('$1');"
 	// 	],
-	// 	"description": "Log output to console" // description of the snippet
+	// 	"description": "description" // description of the snippet
 	// }
 
 	/**
